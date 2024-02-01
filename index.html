@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marisha jewellers</title>
+    <style>
+        * {
+         margin: 0;
+        padding: 0;
+  /* box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+ 
+  height: 100vh;
+  width: 100vw;
+   background: #eff4fd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+  background: #051548; /* Updated background color to #051548 for the grid */
+}
+.logo {
+
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff; /* Changed logo text color to white for better visibility */
+  cursor: pointer;
+}
+
+.logo::first-letter {
+  font-size: 40px;
+  border: 2px solid #fff; /* Changed border color to white */
+  border-right: transparent;
+  padding-left: 5px;
+  color: #fd4766;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff !important;
+  margin: 0 15px;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fd4766 !important;
+}
+
+nav ul li a::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0;
+  position: absolute;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  background: #fd4766;
+  padding: 10px 30px;
+  border-radius: 500px;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #fd4766;
+}
+
+.detail {
+  position:absolute;
+  top: 35%;
+  left: 8%;
+}
+
+.detail h2 {
+  color: #1f1f25;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.detail p {
+  color: #1f1f25;
+  font-size: 18px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+header {
+            padding: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: 250px;
+            border: 2px solid #0f2777;
+            background-repeat: no-repeat;
+            background-position:left ;
+            background-color: #051548;
+            width: 100%;
+            
+            }
+
+        h1 {
+            font-family:Arial, Helvetica, sans-serif ;            
+            font-size: 50px;
+             text-align: center; 
+             font-variant: small-caps;
+             color:#ffff ;
+             
+        }
+        .para{
+           color:#fff;
+        font-size: 25px;
+        text-align: center;
+        line-height:30px ;
+        margin-bottom: 60px;
+        font-style:italic;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+         
+     }
+    footer {
+    background-color:rgb(11, 11, 92);;
+    color: #fff;
+    text-align: center;
+     padding: 20px;
+     height: 80px;
+}
+
+#name{
+    color: #fff;
+    text-align: center;
+     font-family:Arial, Helvetica, sans-serif ;    
+     font-variant: small-caps;
+     
+}
+.img{
+    display: grid;
+    justify-content: space-between;
+    column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(3,1fr);
+
+    
+}
+.grid{
+    background-size:cover;
+    height: 350px;
+    width:450px ;
+}
+
+    /* Media Query for Desktops */
+@media screen and (min-width: 1200px) {
+    header {
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    .para {
+        font-size: 30px;
+        margin-bottom: 80px;
+    }
+}
+/* Media Query for Mobile */
+@media screen and (max-width: 599px) {
+    header {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .para {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    footer {
+        height: 50px;
+        padding: 10px;
+    }
+
+    /*  image sizes for mobile */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+/* Media Query for Tablets */
+@media screen and (min-width: 600px) {
+    header {
+        height: 180px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .para {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    footer {
+        height: 60px;
+        padding: 15px;
+    }
+    
+    /* Adjust image sizes for tablets */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+h3{
+        background-color: #051548;
+        color:white ;
+        text-align:center;
+        text-transform: uppercase;
+        font-style:oblique;
+        /* height: 60px; */
+    }
+  
+
+.gridcontainer{
+    background-color:white;
+    
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3, 1fr) ;
+    row-gap:10px ;
+    column-gap: 10px;
+}
+.griditem{
+ background-color:#051548;
+    color:white;
+
+}
+.gitem1{
+     background-image: url(./final\ pics/allah.jpg);
+    background-size:cover;
+    height: 350px;
+    width:450px ;
+    
+    }
+    .gitem2{
+        background-image: url(./final\ pics/IMG-20240115-WA0027.jpg);
+        background-size: cover;
+        height:350px;
+        width: 450px;
+    }
+    .gitem3{
+        background-image: url(./final\ pics/\kangan\ ferozi.jpeg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+    }
+    .gitem4{
+        
+        background-image: url(./final\ pics/kangan1.jpeg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+        
+    }
+    .gitem5{
+        background-image: url(./final\ pics/WhatsApp\ Image\ 4.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+
+    }
+    .gitem6{
+        background-image: url(./final\ pics/earing.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+
+    }
+    .gitem7{
+        background-image: url(./final\ pics/mehroon.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+
+    }
+    .gitem8{
+        background-image: url(./final\ pics//IMG-20240115-WA0031.jpg);
+        background-size: cover;
+        height: 375px;
+        width: 450px;
+
+
+    }
+    .gitem9{
+        background-image: url(./final\ pics//IMG-20240115-WA0026.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 450px;
+      }
+      button{
+        background-color:grey;
+        color: white;
+        position: relative;
+        left: 210px;
+        top:20px;
+        height: 60px;
+        width: 100px;
+        text-transform: capitalize;
+        border-radius: 20%;
+     }
+     button:hover{
+      background-color: #051548;
+     }
+    
+
+    .gcontainer{
+      margin-top: 10px;
+        background-color:white;
+        width: 100%px;
+        height: 800px;
+        display: grid;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: repeat(3,1fr);
+
+      }
+      .gitem{
+        background-color: #051548;
+       
+
+      }
+      .item1{
+        background-color:#051548;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color:white;
+        font-size: 120px;
+        text-align: center;
+        text-transform: capitalize;
+        
+
+      }
+      .item2{
+        background-color:#051548;
+        color:white;
+        padding:35px;
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+        font-variant: small-caps;
+        }
+        .item3{
+          background-image: url(./final\ pics//finalpic.jpg);
+          background-size: cover;
+        }
+
+
+      .item4{
+        background-image: url(./final\ pics//rose.jpg);
+        background-size:cover;
+
+        background-color:#051548;
+        color:wheat;
+
+      }
+      .item5{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color: white;
+        border: #051548;
+        padding-top:30px;
+        border: solid 2px #051548;
+        box-sizing: border-box;
+        
+        }  
+
+        
+         i{ 
+          font-size: 20px;
+          font-style: oblique;
+          text-transform: capitalize;
+          position: relative;
+          top: 100px;
+          left:49
+          0px;
+
+        }
+        li{
+          display:inline;
+          text-transform: capitalize;
+          font-size: 25px;
+          padding-left: 150px;
+        }
+        a{
+          color: white;
+          text-decoration:none;
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <p class="logo"> Marisha Jewellers</p>
+            
+            <a href="#">Home</a>
+            <a href="./marisha2.html">Rings</a>
+            <a href="./marisha jewellery.html">Design</a>
+            <a href="about us.html">About</a>
+            
+    <a href="#" class="btn">Contect us</a>
+        </nav>
+    </div>
+    
+    
+ <div class="detail">
+    <h2>Welcom to our stunning jewellery collection</h2>
+    
+    <p>
+        <b>
+            <i>
+                Discover the perfect pieces that reflect your style and elegance.
+                <br>From timeless classics to modren trends,our jewellery is crafted with precision and passion.
+                <br>Explor the artisty and craftsmanship that make each piece unique. 
+
+
+    </i>
+    </b>
+    </p>
+ </div> 
+ <header>
+    <h1>ELEGANT RINGS</h1>
+    <h2 id="name">Marisha jewellers</h2>
+    <p class="para">Explore our shining collection of rings including casual rings ,engagement rings 
+    wedding rings.</p>
+</header>
+<hr style="width: 60%;color:#051548">
+<p class="para" style="color: #051548;">BECAUSE YOUR OCCASION IS BRILLIANT</p>
+<div class="img">
+
+<div class="grid"><img src="images/th (1).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (2).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (3).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (4).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (8).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (7).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (9).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (10).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (11).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (12).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (13).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (14).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th (15).jpg" alt="wait"></div>
+<div class="grid"><img src="images/th.jpg" alt="wait"></div>
+
+<div class="grid"><img src="images/th(16).jpeg" alt="wait"></div>
+</div>
+<footer>
+  <h4>2024  Marisha Jewellers . All rights reserved.</h4>
+
+</footer>
+
+<h3>designed just for you by a professional designer. We’ve collected some amazing examples of jewelry </h3>
+    <div class="gridcontainer">
+        <div class="griditem gitem1">1<button>explore us</button></div>
+        <div class="griditem gitem2">2<button>explore us</button></div>
+        <div class="griditem gitem3">3<button>explore us</button></div>
+        <div class="griditem gitem4">4<button>explore us</button></div>
+        <div class="griditem gitem5">5<button>explore us</button></div>
+        <div class="griditem gitem6">6<button>explore us</button></div>
+        <div class="griditem gitem7">7<button>explore us</button></div>
+        <div class="griditem gitem8">8<button>explore us</button></div>
+        <div class="griditem gitem9">9 <button>explore us</button></div>
+        
+        </div>
+        <div class="gcontainer" >
+          <div class="gitem item1">about us</div>
+          <div class="gitem item2">marisha presents <br> <br>a timeless tradition of magnificence  <br> <br>with modern opulent vibes <br> <br>blend of classic and modern aesthetics</div>
+          <div class="gitem item3">3</div>
+          <div class="gitem item4">4</div>
+          <div class="gitem item5">
+            <ul>
+            <li class="linformation no1"><a href="#">return policy</a></li>
+            <li class="linformation no2"> <a href="#">contact us </a></li>
+            <li class="linformation no3"> <a href="#">location </a></li>
+            <li class="linformation no4"> <a href="#">facebook</a></li>
+            <li class="information no5"> <a href="#">twiter</a></li>
+          </ul>
+                <i><span> &#169; </span>2024 marisha jewllers reserved all rights</i>
+           </div>
+          </div>
+
+</body>
+</html>
